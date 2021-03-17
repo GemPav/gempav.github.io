@@ -1,12 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style= "background-color: #8BC9B2;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href = "css/estilos.css">
 </head>
+
+
+
+<div class="contenedor">
 <body>
-    <h1>Hola Mundo</h1>
-    <h2>Web personal de GemPav</h2>
+    <!-- Creamos una barra de navegación con fondos oscuros 
+         La clase "nav-expand-lg" sirve para que el menú se vea 
+         compacto en un móvil pero completo en PC-->
+    <nav class="navbar navbar-expand-lg navbar-success bg-dark">
+        <!-- Podemos título a la barra de navegación-->
+        <a class="navbar-brand" href="#">
+            <!-- Añadimos imagen de github a la barra de menú-->
+            <img src="img/original.png"class="d-inline-block align-top rounded-circle" width="80" height="80" alt="Photo">
+            GemPav
+        </a>
+        <!-- botón para desplegar el menú en modo responsivo-->
+       
+        <!-- Los menús van dentro de un div-->
+        <!-- Las entradas del menú propiamente dichas,
+        fíjate que el ID coincida con el data-target del
+        botón de arriba-->
+
+        <div class="colapse navbar-collapse" id="entradas_menu">
+            <!-- Los menús se hacen con listas-->
+            <ul class="navbar-nav">
+                <!-- Cada elemento de la lista en una entrada del menú-->
+                <li class="nav-item">
+                    <!-- Enlace con el título al que lleva el menú-->
+                    
+                    <nav id='menu'>
+                        <ul>
+                               <li><a href="#" id="menu_inicio"> Inicio </a>
+                                       <ul>
+                                              <li><a href='#bd'>Bases de datos</a></li>
+                    
+                                              <li><a href='#programacion'>Programación</a></li>
+                    
+                                              <li><a href='#dw'>Desarrollo Web</a></li>
+                                       </ul>
+                                </li>
+                               <li><a href='#contact'>Contacto</a>
+                                  
+                               </li>
+                        
+                        </ul>
+                    </nav></nav>
+
+                    <main class="l-main">
+                        <!--===== HOME =====-->
+                        <section class="home" id="home">
+                           <div class="home__container bd-grid">
+                               <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+                       
+                               <div class="home__scroll">
+                                   <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Pulsa el menú</a>
+                               </div>
+                       
+                               <img src="assets/img/perfil.png" alt="" class="home__img">
+                           </div>
+                       </section>
+                    </main>
+                
+                    <div id="panel_inicio" class="panel">
+
+                    <section class="portfolio section" id="portfolio">
+                        <h2 class="section-title">Desarrollador Freelance</h2>
+
+                        <div class="portfolio__container bd-grid">
+                            <div class="portfolio__img">
+                                <img src="img/base.jpg" alt="Base de datos">
+        
+                                <div class="portfolio__link">
+                                    <a href="#bd" class="portfolio__link-name">Base de datos</a>
+                                </div>
+                            </div>
+                            <div class="portfolio__img">
+                                <img src="img/code.jpg" alt="Programación">
+        
+                                <div class="portfolio__link">
+                                    <a href="#programacion" class="portfolio__link-name">Programación</a>
+                                </div>
+                            </div>
+                            <div class="portfolio__img">
+                                <img src="img/htmlcss.png" alt="HTMLCSS">
+        
+                                <div class="portfolio__link">
+                                    <a href="#dw" class="portfolio__link-name">DESARROLLO WEB</a>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
+                    </section>
+
+
+<!--SECCIÓN DE BASE DE DATOS-->
+
+<section class="about section" id="bd">
+    <h2 class="section-title">Base de Datos</h2>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="img/sql1.png" alt="imagen bd">
+        </div>
+
+        <div>
+            <h2 class="about__subtitle">SQL</h2>
+            <p class="about__text">
+            <li><h3 class="contact__subtitle"></h3>
+                <ol type="a">      
+                   <li><span class="contact__text">ORACLE</span></li>
+                   <li><span class="contact__text">MYSQL</span></li>
+       </ol>
+       </li>
+            </p>
+        </div>
+    </div>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="img/nosql.png" alt="imagen bd">
+        </div>
+        <div>
+            <h2 class="about__subtitle">NOSQL</h2>
+            <p class="about__text">
+            <li><h3 class="contact__subtitle"></h3>
+                <ol type="a">      
+                   <li><span class="contact__text">REDIS</span></li>
+                   <li><span class="contact__text">MONGO DB</span></li>
+                   <li><span class="contact__text">FIREBASE</span></li>
+                </ol>
+            </li>
+            </p>
+        </div>
+    </div>
+    
+</section>
+
+<!--SECCIÓN DE PROGRAMACIÓN-->
+
+<section class="about section" id="programacion">
+    <h2 class="section-title">Programación</h2>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="img/lenguajes-de-programacion.jpg" alt="imagen programacion">
+        </div>
+
+        <div>
+            <h2 class="about__subtitle">Lenguajes de Programación</h2>
+            <p class="about__text">
+            <li><h3 class="contact__subtitle"></h3>
+                <ol type="a">      
+                   <li><span class="contact__text">BASH</span></li>
+                   <li><span class="contact__text">POWERSHELL</span></li>
+                   <li><span class="contact__text">PHYTON</span></li>
+                   <li><span class="contact__text">JAVA</span></li>
+                   <li><span class="contact__text">JAVASCRIPT</span></li>
+                   <li><span class="contact__text">C (ARDUINO)</span></li>
+       </ol>
+       </li>
+            </p>
+        </div>
+    </div>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="img/CLIENTE.png" alt="imagen programacion">
+        </div>
+        <div>
+            <h2 class="about__subtitle">Programación lado cliente (frontend)</h2>
+            <p class="about__text">
+            <li><h3 class="contact__subtitle"></h3>
+                <ol type="a">      
+                   <li><span class="contact__text">REACT</span></li>
+                   <li><span class="contact__text">ANGULAR</span></li>
+                   <li><span class="contact__text">ANDROID</span></li>
+                </ol>
+            </li>
+            </p>
+        </div>
+    </div>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="img/SERVIDOR.jpg" alt="imagen programacion">
+        </div>
+        <div>
+            <h2 class="about__subtitle">Programación lado servidor (backend)</h2>
+            <p class="about__text">
+            <li><h3 class="contact__subtitle"></h3>
+                <ol type="a">      
+                   <li><span class="contact__text">NODEJS</span></li>
+                   <li><span class="contact__text">SPRING JAVA</span></li>
+                   <li><span class="contact__text">SERVLETS</span></li>
+                </ol>
+            </li>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!--SECCIÓN DESARROLLO WEB-->
+
+<section class="about section" id="dw">
+    <h2 class="section-title">Desarrollo Web</h2>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="img/dw.jpg" alt="imagen dw">
+        </div>
+
+        <div>
+            <h2 class="about__subtitle">HTML5</h2>
+            <h2 class="about__subtitle">JAVASCRIPT VANILLA</h2>
+            <h2 class="about__subtitle">CSS3</h2>
+            <h2 class="about__subtitle">WEBAPPS</h2>
+            
+        </div>
+    </div>
+
+
+<!--===== CONTACTO =====-->
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="img/original.png" alt="Perfil" width="200px" height="200px" >
+
+                        <div class="portfolio__link">
+                            <a  href="https://github.com/GemPav">Mi GitHub</a>
+                        </div>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">info.mail.com</span>
+
+                        <h3 class="contact__subtitle">TELÉFONO</h3>
+                        <span class="contact__text">+XX-YYYYYYYYY</span>
+
+                        <h3 class="contact__subtitle">DIRECCIÓN</h3>
+                        <span class="contact__text">Jaén</span>
+                    </div>
+                    
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        
+
+    
+
+
+<!--===== FOOTER =====-->
+<footer class="footer section">
+    <div class="footer__container bd-grid">
+        <div class="footer__data">
+            <h2 class="footer__title">Gemma Pavón</h2>
+            <p class="footer__text">Soy Gemma Pavón y esta página es el resultado de uno de los proyectos del curso.</p>
+        </div>
+
+        <div class="footer__data">
+            <h2 class="footer__title">EXPLORE</h2>
+            <ul>
+                
+                <li><a href="#portfolio" class="footer__link">Desarrollador de Freelance</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <!-- Aquí al final antes de cerrar el body 
+        se debe poner el Java Script para que
+        la página cargue más rápido -->
+    <!-- Si queremos meter el código JavaScript en el medio,
+        se pondría el JavaScript en el head-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="js/controlador.js"></script>
+    <script src="js/index.js"></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  
+</div>
+
 </body>
+
 </html>
